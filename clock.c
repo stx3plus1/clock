@@ -7,7 +7,7 @@
 #define  TIME_FONT   "7\\-Segment:size=96"
 #define  DATE_FONT   "7\\-Segment:size=24"
 #define  TIME_STR    "%H:%M:%S"
-#define  DATE_STR    "%d% . %m . %y"
+#define  DATE_STR    "%d . %m . %y"
 #define  DATE_height 64
 #define  STR_MAX     128
 #define  QUIT_KEY    XK_q
