@@ -1,0 +1,9 @@
+simple x11 clock thing and whatnot
+
+requires: xlib, xft and fontconfig PLUS a font of choice in the list
+
+configuration is all done in clock.c at the top of the file (fight me)
+
+run make or make install to get it over with, come back to configure
+
+inspired by rsclock
