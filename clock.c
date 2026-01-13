@@ -8,7 +8,7 @@
 #define  DATE_FONT   "7\\-Segment:size=24"
 #define  TIME_STR    "%H:%M:%S"
 #define  DATE_STR    "%d . %m . %y"
-#define  DATE_height 64
+#define  DATE_HEIGHT 64
 #define  STR_MAX     128
 #define  QUIT_KEY    XK_q
 
@@ -60,7 +60,7 @@ void redraw_window(time_t time) {
 	XftTextExtentsUtf8(dpy, datefont, (FcChar8*)date_str, strlen(date_str), &date_extents);
 	
 	int date_left = (width - date_extents.width) / 2;
-	int date_mid  = (DATE_height + date_extents.height) / 2;
+	int date_mid  = (DATE_HEIGHT + date_extents.height) / 2;
 
 	XClearArea(dpy, wnd, 0, date_mid - date_extents.height, 0, date_extents.height, False);
 	XftDrawStringUtf8(
